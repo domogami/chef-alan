@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+:root {
+  --main-bg-color: #0EAA00;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  font-size: 20px;
+  background: #efeeee;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #000000;
+}
+
+p {
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
+}
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  margin: 0;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+}
+.Header img {
+  width: 100px;
+  height: auto;
+}
+.HeaderText {
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.HeaderText a {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--main-bg-color)
+}
+.Hero {
+  width: 100vw;
+  height: 100vh;
+}
+.PhotoText {
+  display: grid;
+  grid-template-columns: 1fr .1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+  margin-left: 25vh;
+}
+.HeroImage {
+  margin-left: 100px;
+  width: 25vw;
+  height: auto;
+  border-radius: 1.7em;
+  overflow: hidden;
+}
+.Hero img {
+  width: 30vw;
+  height: auto;
+  margin: 0 0 0 0;
+  border-radius: 1.7em;
+}
+.Hero .FancyRectangle {
+  background-color: var(--main-bg-color);
+  width: 10px;
+  height: 300px;
+  align-self: center;
+}
+.Hero HeroText {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-align: justify;
+}
+.Hero h1 {
+  align-self: left;
+}
+.Hero span {
+  color: var(--main-bg-color);
+  
+}
+.Hero h2 {
+  max-width: 25vw;
+}
