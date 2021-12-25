@@ -16,13 +16,16 @@ import LeCordonBleu from '../images/LeCordonBleu.png'
 import JonathanClub from '../images/JonathanClub.png'
 import { faLinkedinIn, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import Snowfall from 'react-snowfall'
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 export default function Home() {
   return (
     <div>
+      <Snowfall color="white"/>
       <Header />
       <Hero />
-      <FancyDivider Image={Cake1} Title="Showcase" />
+      <div id="Showcase"/>
+      <FancyDivider Image={Cake1} Title="Showcase"/>
       <ShowcaseElement
         Text="Reese’s "
         Text2="Peanut Butter"
@@ -47,6 +50,7 @@ export default function Home() {
         Image={RedVelvet}
         Mirror={true}
       />
+      <div id="Experience"/>
       <FancyDivider Image={Cake2} Title="Experience" />
       <ExperienceCard
         Image={CheesecakeFactory}
@@ -72,8 +76,8 @@ export default function Home() {
         SubText="Baking and Pastry Chef Instructor"
         SubText1="Lecture on the history, science, and methods for making and baking breads, laminated doughs, and pastries. Demonstrate 100 plus baking and pastry recipes and techniques. Evaluate and assess student product, written examinations, and practical examinations."
       />
-      <FancyDivider Image={Cake3} Title="Contact Me" />
-      <section>
+      <FancyDivider Image={Cake3} Title="Contact Me"/>
+      <section id="Contact">
         <ul className="icon-list">
           <li className="icon-item">
             <a
@@ -92,6 +96,16 @@ export default function Home() {
             >
               <i className="fab fa-linkedin-in">
                 <FontAwesomeIcon icon={faLinkedinIn} />
+              </i>
+            </a>
+          </li>
+          <li className="icon-item">
+            <a
+              href="mailto:hawaiihermits@sbcglobal.net"
+              className="icon-link"
+            >
+              <i className="fab fa-linkedin-in">
+                <FontAwesomeIcon icon={faPaperPlane} />
               </i>
             </a>
           </li>
